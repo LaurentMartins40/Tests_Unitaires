@@ -5,6 +5,8 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static org.assertj.core.api.Assertions.*;
+
 import dev.exception.CalculException;
 /**
  * Test unitaire de la classe dev.service.CalculService.
@@ -25,6 +27,6 @@ public class CalculServiceTest {
 		int somme = calcul.additionner("1+3+4");
 		LOG.info("Alors j'obtiens le résultat " + somme);
 		// TODO
-		assertTrue(somme == 8);
+		assertThat(somme).isEqualTo(8);
 	}
 }
