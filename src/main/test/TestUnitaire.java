@@ -9,6 +9,6 @@ import dev.utils.StringUtils;
 public class TestUnitaire {
 	@Test
 	public void testLevenshteinDistance(){
-		assertTrue(StringUtils.levenshteinDistance("coucou","coucou1")==1);
+		assertTrue(StringUtils.levenshteinDistance("coucou","coucou10")==2);
 	}
 }
