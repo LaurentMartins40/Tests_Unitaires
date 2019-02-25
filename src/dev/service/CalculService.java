@@ -12,11 +12,9 @@ public class CalculService {
 		// TODO par exemple "Evaluation de l'expression 1+4"
 		LOG.debug("Evaluation de l'expression : " + expression);
 		
-		String[] tab = expression.split("\\+");
-		
-		for(int i = 0;i<tab.length;i++){
-			System.out.println(tab[i]);
-			somme = somme + Integer.parseInt(tab[i]);
+		String[] calcul = expression.split("\\+");
+		for(int i = 0;i<calcul.length;i++){
+			somme = somme + Integer.parseInt(calcul[i]);
 		}
 		return somme;
 	}
